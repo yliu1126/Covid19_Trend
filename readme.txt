@@ -5,3 +5,5 @@ Features:
 - Choropleth showing the positive covid cases in the states
 - Horizontal Bar Chart showing the same data but in descending order
 - Slider to explore the trend on the last page
+
+https://yliu1126.github.io/Covid19_Trend/
