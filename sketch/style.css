@@ -1,0 +1,11 @@
+#graph{
+display: flex;
+}
+
+#top{
+display: flex;
+}
+
+#day-picker{
+    transform: translate(20px);
+}

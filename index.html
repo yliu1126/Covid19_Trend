@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Covid-19 Trend</title>
+    <meta name="description" content="Viz on Covid-19 trend" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <main>
+      <section id="intro">
+        <h1 class="intro__hed">Positive Covid-19 Cases in the United States</h1>
+        <p class="intro__dek">
+          Start scrolling to see how Covid-19 developed in the US.
+        </p>
+      </section>
+
+      <section id="scrolly">
+        <article>
+          <div class="step" data-step="1">
+            <h3>January 21, 2020</h3>
+            <p>
+              - Officials in Washington state confirm the first case on US soil.
+              <br />
+              - At an emergency committee, WHO says that the coronavirus does
+              not yet constitute a public health emergency of international
+              concern.
+            </p>
+          </div>
+          <div class="step" data-step="2">
+            <h3>March 11, 2020</h3>
+            <p>
+              - WHO declares the novel coronavirus outbreak to be a pandemic.
+              WHO says the outbreak is the first pandemic caused by a
+              coronavirus.
+            </p>
+          </div>
+          <div class="step" data-step="3">
+            <h3>June 11, 2020</h3>
+            <p>
+              - The United States passes 2 million confirmed cases of the virus,
+              according to Johns Hopkins.
+            </p>
+          </div>
+          <div class="step" data-step="4">
+            <h3>August 23, 2020</h3>
+            <p>
+              - The FDA issues an emergency use authorization for the use of
+              convalescent plasma to treat Covid-19. It is made using the blood
+              of people who have recovered from coronavirus infections.
+            </p>
+          </div>
+          <div class="step" data-step="5">
+            <h3>December 14, 2020</h3>
+            <p>
+              - US officials announce the first doses of the FDA authorized
+              Pfizer vaccine have been delivered to all 50 states, the District
+              of Columbia and Puerto Rico.
+            </p>
+          </div>
+          <div class="step" data-step="6">
+            <h3>February 22, 2021</h3>
+            <p>
+              - The death toll from Covid-19 exceeds 500,000 in the United
+              States.
+            </p>
+          </div>
+          <div class="step" data-step="7">
+            <h3 id="change-date">February 22, 2021</h3>
+            <p>
+              - Use the slider at the bottom to pick a day between 01/13/2020
+              and 03/07/2021. You can also use it to see the trend of how
+              Covid-19 developed in the US.
+              <br />
+              <br />
+              - Play around with it!
+            </p>
+          </div>
+        </article>
+        <div id="graph-container">
+          <div id="graph">
+            <svg id="choropleth"></svg>
+            <svg id="barGraph"></svg>
+          </div>
+          <div id="bottom">
+            <svg id="legend"></svg>
+            <div id="slider"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="outro"></section>
+    </main>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/d3-simple-slider"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
